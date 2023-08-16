@@ -120,7 +120,7 @@ Clone the repository to desired directory on local computer.
 
 > `npm install`
 
-> `npm run start`
+> `npm start`
 
 ## 👥 Author <a name="authors"></a>
 - GitHub: [@wacoo](https://github.com/wacoo)
