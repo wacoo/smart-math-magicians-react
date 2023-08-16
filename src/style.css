@@ -1,42 +1,40 @@
-
-
-
 .container {
-    width: 70%;
-    padding: 50px;
-    margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 70%;
+  padding: 50px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .display {
-    width: calc(100% - 26px);
-    height: 50px;
-    padding: 12px;
-    background-color: gray;
-    color: #fff;
-    text-align: right;
-    font-weight: 600;
-    font-size: 16px;
-    border: gray solid 1px;
+  width: calc(100% - 26px);
+  height: 50px;
+  padding: 12px;
+  background-color: gray;
+  color: #fff;
+  text-align: right;
+  font-weight: 600;
+  font-size: 16px;
+  border: gray solid 1px;
 }
+
 .normal {
-    width: 25%;
-    height: 50px;
-    background-color: rgb(221, 220, 220);
-    border: rgb(190, 189, 189) solid 0.5px;
+  width: 25%;
+  height: 50px;
+  background-color: rgb(221, 220, 220);
+  border: rgb(190, 189, 189) solid 0.5px;
 }
 
 .operator {
-    width: 25%;
-    height: 50px;
-    background-color: rgb(230, 130, 17);
-    border: rgb(190, 189, 189) solid 0.5px;
+  width: 25%;
+  height: 50px;
+  background-color: rgb(230, 130, 17);
+  border: rgb(190, 189, 189) solid 0.5px;
 }
 
 .zero {
-    width: 50%;
-    height: 50px;
-    background-color: rgb(221, 220, 220);
-    border: rgb(190, 189, 189) solid 0.5px;
+  width: 50%;
+  height: 50px;
+  background-color: rgb(221, 220, 220);
+  border: rgb(190, 189, 189) solid 0.5px;
 }
