@@ -2,6 +2,7 @@ import React from 'react';
 import Key from './Key';
 import Display from './Display';
 import calculate from '../logic/calculate';
+import Quote from './Quotes';
 
 const selectClass = (idx, divIdx) => {
   if (divIdx < 4 && idx !== 3) {
@@ -113,20 +114,23 @@ class Calculator extends React.Component {
     const { obj } = this.state;
     return (
       <div className="container">
-        <Display className="input" value={this.getDisplayValue(obj)} />
-        {lblArray.map((lbl, divIdx) => (
-          <div className="row" key={lbl[0]}>
-            {lbl.map((element, idx) => (
-              <Key
-                lbl={element}
-                cls={selectClass(idx, divIdx)}
-                key={element}
-                on
-                onSmash={() => this.handleClick(element)}
-              />
-            ))}
-          </div>
-        ))}
+        <Quote />
+        <div className="calculator">
+          <Display className="input" value={this.getDisplayValue(obj)} />
+          {lblArray.map((lbl, divIdx) => (
+            <div className="row" key={lbl[0]}>
+              {lbl.map((element, idx) => (
+                <Key
+                  lbl={element}
+                  cls={selectClass(idx, divIdx)}
+                  key={element}
+                  on
+                  onSmash={() => this.handleClick(element)}
+                />
+              ))}
+            </div>
+          ))}
+        </div>
       </div>
     );
   }
