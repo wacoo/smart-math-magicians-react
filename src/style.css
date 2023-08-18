@@ -1,10 +1,18 @@
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 90%;
   padding: 50px;
-  margin-top: 30px;
+  margin-top: 80px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -22,6 +30,15 @@
   background-color: aliceblue;
   margin: 12px;
   padding: 24px 40px 0;
+}
+
+.quote img {
+  width: 30%;
+  text-align: center;
+}
+
+.quote h2 {
+  text-align: center;
 }
 
 .quote blockquote {

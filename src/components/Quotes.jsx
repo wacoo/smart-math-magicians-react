@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import errorImg from '../images/error.png';
+import loadingImg from '../images/loading.gif';
 
 function LoadQuotes() {
   const [quote, setQuote] = useState([]);
@@ -17,7 +19,6 @@ function LoadQuotes() {
         });
         const result = await res.json();
         setQuote(result[0]);
-        console.log(result[0].quote);
       } catch (error) {
         setHasError(true);
       }
@@ -29,9 +30,7 @@ function LoadQuotes() {
   if (isLoading) {
     return (
       <div className="quote">
-        <blockquote>
-          <h1>Quote is loading...</h1>
-        </blockquote>
+        <img src={loadingImg} alt="Quote loading..." />
       </div>
     );
   }
@@ -39,7 +38,8 @@ function LoadQuotes() {
   if (hasError) {
     return (
       <div className="quote">
-        <h1>API loading error, please reload the page</h1>
+        <img src={errorImg} alt="Quote loading..." />
+        <h2>API loading error, please reload the page</h2>
       </div>
     );
   }
