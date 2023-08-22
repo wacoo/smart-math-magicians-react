@@ -1,9 +1,96 @@
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .container {
-  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
   padding: 50px;
   margin-top: 80px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.quote {
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: italic;
+  width: calc(60% - 85px);
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: gray solid 2px;
+  background-color: aliceblue;
+  margin: 12px;
+  padding: 24px 40px 0;
+}
+
+.quote img {
+  width: 30%;
+  text-align: center;
+}
+
+.quote h2 {
+  text-align: center;
+}
+
+.quote blockquote {
+  display: inline-block;
+  margin: 0;
+  padding: 1em;
+  position: relative;
+}
+
+.quote blockquote::before {
+  color: #f90;
+  content: "“";
+  font-size: 2em;
+  left: 0;
+  line-height: 0.75em;
+  position: absolute;
+  top: 0;
+  transform: scale(2, 8);
+  transform-origin: top;
+}
+
+.quote blockquote::after {
+  color: #f90;
+  content: "”";
+  font-size: 2em;
+  line-height: 0.75em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: scale(2, 8);
+  transform-origin: top;
+}
+
+.quote blockquote > * {
+  padding: 0 2em;
+}
+
+.quote blockquote cite {
+  color: #c60;
+  display: block;
+  font-style: normal;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.quote p {
+  margin: 12px;
+}
+
+.calculator {
+  width: 60%;
+  margin: 12px;
 }
 
 .display {
@@ -37,4 +124,21 @@
   height: 50px;
   background-color: rgb(221, 220, 220);
   border: rgb(190, 189, 189) solid 0.5px;
+}
+
+@media only screen and (min-width: 760px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .quote {
+    width: 50%;
+    min-height: 300px;
+  }
+
+  .calculator {
+    width: 70%;
+    margin: 12px;
+  }
 }

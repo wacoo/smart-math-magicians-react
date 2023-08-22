@@ -112,7 +112,7 @@ class Calculator extends React.Component {
     ];
     const { obj } = this.state;
     return (
-      <div className="container">
+      <div className="calculator">
         <Display className="input" value={this.getDisplayValue(obj)} />
         {lblArray.map((lbl, divIdx) => (
           <div className="row" key={lbl[0]}>
