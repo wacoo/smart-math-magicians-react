@@ -2,7 +2,7 @@ import Header from './Header';
 
 const Home = () => (
   <>
-    <Header />
+    {/* <Header /> */}
     <div className="container">
       <h1>Welcome to our page!</h1>
       <p>
