@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import errorImg from '../images/error.png';
 import loadingImg from '../images/loading.gif';
+import Header from './Header';
 
 function LoadQuotes() {
   const [quote, setQuote] = useState([]);
@@ -29,34 +30,47 @@ function LoadQuotes() {
 
   if (isLoading) {
     return (
-      <div className="quote">
-        <img src={loadingImg} alt="Quote loading..." />
-      </div>
+      <>
+        <Header />
+        <div className="container">
+          <div className="quote">
+            <img src={loadingImg} alt="Quote loading..." />
+          </div>
+        </div>
+      </>
     );
   }
 
   if (hasError) {
     return (
-      <div className="quote">
-        <img src={errorImg} alt="Quote loading..." />
-        <h2>API loading error, please reload the page</h2>
-      </div>
+      <>
+        <Header />
+        <div className="container">
+          <div className="quote">
+            <img src={errorImg} alt="Quote loading..." />
+            <h2>API loading error, please reload the page</h2>
+          </div>
+        </div>
+      </>
     );
   }
   return (
-    <div className="quote">
-      <blockquote>
-        <p>
-          {`" ${quote.quote} "`}
-        </p>
-        <p>
-          <strong>
-            &mdash;
-            {` ${quote.author}`}
-          </strong>
-        </p>
-      </blockquote>
-    </div>
+    <>
+      <Header />
+      <div className="container">
+        <div className="quote">
+          <blockquote>
+            <p>{` ${quote.quote} `}</p>
+            <p>
+              <strong>
+                &mdash;
+                {` ${quote.author}`}
+              </strong>
+            </p>
+          </blockquote>
+        </div>
+      </div>
+    </>
   );
 }
 

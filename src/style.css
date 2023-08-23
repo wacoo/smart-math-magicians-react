@@ -1,9 +1,65 @@
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  width: 100vw;
   height: 100vh;
   background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 0 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header h1 {
+  color: #fff;
+}
+
+.header ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.header li {
+  color: #fff;
+  margin-right: 12px;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 8px 10px;
+  background-color: #6aa3ee;
+  border-radius: 5px;
+  border: #fff solid 1px;
+}
+
+.header a:hover {
+  color: black;
+  background-color: #fff;
+}
+
+.header a:active {
+  color: #000;
+  background-color: #fff;
+}
+
+.header a:focus {
+  color: #000;
+  background-color: #fff;
 }
 
 .container {
@@ -12,12 +68,20 @@ body {
   align-items: center;
   width: 90%;
   padding: 50px;
-  margin-top: 80px;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+.container h1 {
+  margin: 12px;
 }
 
 .quote {
+  color: #000;
   font-family: Helvetica, Arial, sans-serif;
   font-style: italic;
   width: calc(60% - 85px);
@@ -126,10 +190,14 @@ body {
   border: rgb(190, 189, 189) solid 0.5px;
 }
 
+.active {
+  color: #000;
+  background-color: #fff;
+}
+
 @media only screen and (min-width: 760px) {
   .container {
     display: flex;
-    flex-direction: row;
   }
 
   .quote {
