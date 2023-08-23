@@ -62,7 +62,6 @@ body {
   background-color: #fff;
 }
 
-
 .container {
   display: flex;
   flex-direction: column;
@@ -193,7 +192,7 @@ body {
 
 .active {
   color: #000;
-  background-color: #fff;  
+  background-color: #fff;
 }
 
 @media only screen and (min-width: 760px) {
