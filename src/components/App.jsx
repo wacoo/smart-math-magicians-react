@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import {
   BrowserRouter,
   Routes,
@@ -10,16 +9,16 @@ import LoadQuotes from './Quotes';
 import PageError from './PageError';
 
 const App = () => (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/">
-          <Route index element={<Home />} />
-          <Route path="calculator" element={<Calculator />} />
-          <Route path="quotes" element={<LoadQuotes />} />
-        </Route>
-        <Route path="*" element={<PageError />} />
-      </Routes>
-    </BrowserRouter>
+  <BrowserRouter>
+    <Routes>
+      <Route path="/">
+        <Route index element={<Home />} />
+        <Route path="calculator" element={<Calculator />} />
+        <Route path="quotes" element={<LoadQuotes />} />
+      </Route>
+      <Route path="*" element={<PageError />} />
+    </Routes>
+  </BrowserRouter>
 );
 
 export default App;
