@@ -16,9 +16,9 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/">
-          <Route index element={<Home active={active} setActive={setActive} />} />
-          <Route path="calculator" element={<Calculator active={active} setActive={setActive} />} />
-          <Route path="quotes" element={<LoadQuotes active={active} setActive={setActive} />} />
+          <Route index element={<Home />} />
+          <Route path="calculator" element={<Calculator />} />
+          <Route path="quotes" element={<LoadQuotes />} />
         </Route>
         <Route path="*" element={<PageError />} />
       </Routes>

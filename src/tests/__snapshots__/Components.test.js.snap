@@ -205,16 +205,53 @@ Array [
 `;
 
 exports[`Test components Test Header component 1`] = `
-<div
-  className="container"
->
-  <h1>
-    Welcome to our page!
-  </h1>
-  <p>
-    Smart Math Magicians brings a touch of enchantment to your mathematical journey. Equipped with the power of React, this single-page application seamlessly melds the art of computation with the wonder of technology. With Smart Math Magicians, complex calculations become a breeze.
-  </p>
-</div>
+Array [
+  <div
+    className="header"
+  >
+    <h1>
+      Math Magicians
+    </h1>
+    <ul>
+      <li>
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          href="/calculator"
+          onClick={[Function]}
+        >
+          Calculator
+        </a>
+      </li>
+      <li>
+        <a
+          href="/quotes"
+          onClick={[Function]}
+        >
+          Quotes
+        </a>
+      </li>
+    </ul>
+  </div>,
+  <div
+    className="container"
+  >
+    <h2
+      className="h2"
+    >
+      Welcome to our page!
+    </h2>
+    <p>
+      Smart Math Magicians brings a touch of enchantment to your mathematical journey. Equipped with the power of React, this single-page application seamlessly melds the art of computation with the wonder of technology. With Smart Math Magicians, complex calculations become a breeze.
+    </p>
+  </div>,
+]
 `;
 
 exports[`Test components Test Home component 1`] = `
@@ -251,4 +288,61 @@ exports[`Test components Test Home component 1`] = `
     </li>
   </ul>
 </div>
+`;
+
+exports[`Test components Test Quote component 1`] = `
+Array [
+  <div
+    className="header"
+  >
+    <h1>
+      Math Magicians
+    </h1>
+    <ul>
+      <li>
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          href="/calculator"
+          onClick={[Function]}
+        >
+          Calculator
+        </a>
+      </li>
+      <li>
+        <a
+          href="/quotes"
+          onClick={[Function]}
+        >
+          Quotes
+        </a>
+      </li>
+    </ul>
+  </div>,
+  <div
+    className="container"
+  >
+    <div
+      className="quote"
+    >
+      <blockquote>
+        <p>
+           undefined 
+        </p>
+        <p>
+          <strong>
+            —
+             undefined
+          </strong>
+        </p>
+      </blockquote>
+    </div>
+  </div>,
+]
 `;
