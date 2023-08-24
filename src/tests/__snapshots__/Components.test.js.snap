@@ -205,6 +205,42 @@ Array [
 `;
 
 exports[`Test components Test Header component 1`] = `
+<div
+  className="header"
+>
+  <h1>
+    Math Magicians
+  </h1>
+  <ul>
+    <li>
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/calculator"
+        onClick={[Function]}
+      >
+        Calculator
+      </a>
+    </li>
+    <li>
+      <a
+        href="/quotes"
+        onClick={[Function]}
+      >
+        Quotes
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Test components Test Home component 1`] = `
 Array [
   <div
     className="header"
@@ -252,42 +288,6 @@ Array [
     </p>
   </div>,
 ]
-`;
-
-exports[`Test components Test Home component 1`] = `
-<div
-  className="header"
->
-  <h1>
-    Math Magicians
-  </h1>
-  <ul>
-    <li>
-      <a
-        href="/"
-        onClick={[Function]}
-      >
-        Home
-      </a>
-    </li>
-    <li>
-      <a
-        href="/calculator"
-        onClick={[Function]}
-      >
-        Calculator
-      </a>
-    </li>
-    <li>
-      <a
-        href="/quotes"
-        onClick={[Function]}
-      >
-        Quotes
-      </a>
-    </li>
-  </ul>
-</div>
 `;
 
 exports[`Test components Test Quote component 1`] = `

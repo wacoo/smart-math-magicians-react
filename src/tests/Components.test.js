@@ -13,13 +13,14 @@ function handleClick(val) {
   init = val + 1;
   return val + 1;
 }
+
 describe('Test components', () => {
-  it('Test Home component', () => {
+  it('Test Header component', () => {
     const homeComponent = renderer.create(<BrowserRouter><Header /></BrowserRouter>);
     expect(homeComponent).toMatchSnapshot();
   });
 
-  it('Test Header component', () => {
+  it('Test Home component', () => {
     const headerComponent = renderer.create(<BrowserRouter><Home /></BrowserRouter>);
     expect(headerComponent).toMatchSnapshot();
   });
