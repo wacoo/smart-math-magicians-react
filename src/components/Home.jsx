@@ -4,7 +4,7 @@ const Home = () => (
   <>
     <Header />
     <div className="container">
-      <h2 className='h2'>Welcome to our page!</h2>
+      <h2 className="h2">Welcome to our page!</h2>
       <p>
         Smart Math Magicians brings a touch of enchantment to your mathematical
         journey. Equipped with the power of React, this single-page application

@@ -9,10 +9,7 @@ import Calculator from './Calculator';
 import LoadQuotes from './Quotes';
 import PageError from './PageError';
 
-const App = () => {
-  const [active, setActive] = useState('home');
-
-  return (
+const App = () => (
     <BrowserRouter>
       <Routes>
         <Route path="/">
@@ -23,7 +20,6 @@ const App = () => {
         <Route path="*" element={<PageError />} />
       </Routes>
     </BrowserRouter>
-  );
-};
+);
 
 export default App;
