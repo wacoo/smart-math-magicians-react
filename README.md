@@ -73,7 +73,7 @@ Powered by an API, Smart Math Magicians is constantly updated with the latest ma
 - React
 
 
-<!-- Features -->
+<!-- Features  -->
 
 ### Key Features <a name="key-features"></a>
 - Powerful calculator for complex mathematical computations
