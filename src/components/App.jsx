@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import {
   BrowserRouter,
   Routes,
@@ -9,21 +8,17 @@ import Calculator from './Calculator';
 import LoadQuotes from './Quotes';
 import PageError from './PageError';
 
-const App = () => {
-  const [active, setActive] = useState('home');
-
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/">
-          <Route index element={<Home active={active} setActive={setActive} />} />
-          <Route path="calculator" element={<Calculator active={active} setActive={setActive} />} />
-          <Route path="quotes" element={<LoadQuotes active={active} setActive={setActive} />} />
-        </Route>
-        <Route path="*" element={<PageError />} />
-      </Routes>
-    </BrowserRouter>
-  );
-};
+const App = () => (
+  <BrowserRouter>
+    <Routes>
+      <Route path="/">
+        <Route index element={<Home />} />
+        <Route path="calculator" element={<Calculator />} />
+        <Route path="quotes" element={<LoadQuotes />} />
+      </Route>
+      <Route path="*" element={<PageError />} />
+    </Routes>
+  </BrowserRouter>
+);
 
 export default App;
